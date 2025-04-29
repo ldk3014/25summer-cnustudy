@@ -22,34 +22,28 @@
 </head>
 <body>
   <script>
-    // form 생성
     const form = document.createElement('form');
 
-    // username label + input
     const usernameLabel = document.createElement('label');
     usernameLabel.textContent = 'username';
     const usernameInput = document.createElement('input');
     usernameInput.type = 'text';
 
-    // password label + input
     const passwordLabel = document.createElement('label');
     passwordLabel.textContent = 'password';
     const passwordInput = document.createElement('input');
     passwordInput.type = 'password';
 
-    // submit button
     const submitButton = document.createElement('button');
     submitButton.type = 'submit';
     submitButton.textContent = 'submit';
 
-    // 요소들을 form에 추가
     form.appendChild(usernameLabel);
     form.appendChild(usernameInput);
     form.appendChild(passwordLabel);
     form.appendChild(passwordInput);
     form.appendChild(submitButton);
 
-    // form을 body에 추가
     document.body.appendChild(form);
   </script>
 </body>
